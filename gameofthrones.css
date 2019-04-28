@@ -1,0 +1,173 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+h1.display-3
+{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+#small
+{
+    display: none;
+}
+.navsm
+{
+    display: none;
+}
+#dw
+{
+    margin-top: 4%;
+}
+.card button
+{
+    margin-bottom: 2%;
+    
+}
+input[type="search"]::placeholder
+{
+    color: grey;
+}
+.lightbox img
+{
+    height: 300px;
+    margin:0;
+    padding: 0;
+    width: 100%;
+}
+
+
+#foot
+{ margin-top: 8%;
+    padding-top: 2%;
+    
+}
+#foot h5
+{
+    font-size: 30px;
+}
+#foot ul
+{
+    text-decoration: none;
+}
+.media li
+{
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+width: 5%;
+    padding: .5%;
+   
+}
+.media img
+{
+    border-style: solid;
+    border-color: black;
+    border-radius: 100%;
+     margin-left: 2%;
+    margin-right: 2%;
+}
+.media img:hover
+{
+    border-color:#4BB543;
+    transition-delay: .2s ;
+    transition-timing-function:ease-out;
+    
+}
+
+#foot2 ul
+{
+    padding-bottom: 2%;
+}
+#foot2 li
+{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 2%;   
+    
+}
+.navbar.scrolled {
+  background-color: #292b2c !important;
+  transition: background-color 200ms linear;
+}
+#foot2 a
+{
+    color: white;
+}
+.navbar 
+{
+    background-color: transparent;
+}
+
+.card-deck button
+{
+    margin-bottom: 0;
+}
+.smalln
+{
+    display: none;
+}
+#small-car
+{
+    display: none;
+}
+.spacer{
+    height:10px;
+}
+@media screen and (max-width:900px)
+{
+    .main_nav
+    {
+        display: none;
+    }
+    #small
+    {
+        display: flex;
+        align-items: flex-end;
+    }
+    input[type="search"]
+{
+    width: 110px;
+    background-image: url('images/698627-icon-111-search-512.png') 20px ;
+    border-style:none;
+    border-bottom: 4px solid grey;
+    margin-right: 0px;
+    }
+   div.input-group
+    {
+        width: 1px;
+        
+    }
+    #car
+    {
+        display: none;
+    }
+    #small-car
+    {
+        display: block;
+    }
+    div.navsm
+    {
+        display: flex;
+        justify-content:flex-end;
+        margin-left: 41%;
+        position:fixed;
+        top: 4px;
+        width: 50%;
+    }
+    div.para
+    {
+        height: 500px;
+        overflow-y: scroll;
+    }
+    .list-group
+    {
+        font-size: 8px;
+    }
+    .media
+    {
+        margin-left: 18%;
+    }
+    
+}

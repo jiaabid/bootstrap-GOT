@@ -1,0 +1,1834 @@
+<!doctype html>
+<html>
+<head>
+    <title>GOT</title>
+    <link rel="stylesheet" type="text/css" href="gameofthrones.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<meta name="viewport" content="width=device-width",initial-scale=1> 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--    icons used-->
+    <link rel="stylesheet" href="C:\Users\JA\Downloads\fontawesome-free-5.8.1-web\fontawesome-free-5.8.1-web\css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<!--   for gallery-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+</head>
+    <body>
+        <div class="wrapper">
+       <header> 
+<!--           nav bar-->
+           <div class="main_nav">
+           <nav class="navbar fixed-top d-flex">
+            <a class="navbar-brand text-light ml-4">Game Of Thrones</a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+            <form class="form-inline">
+                <input type="search" name="search" class="form-control transparent-input" style="background-color: rgba(0,0,0,0)" placeholder="search">
+                <div class="input-group bg-light">
+            <div class="input-group-append">
+                <span class="input-group-text ">Go!</span>
+                </div></div>
+                </form>
+            </li>
+        <li class="nav-item">
+        <a href="" class="nav-link text-light">Home</a>    
+            </li>
+<!--            nabar season button dropdown-->
+            <li class="nav-item dropdown">
+        <a href="" class="nav-link text-light dropdown-toggle" id="seasondropdown" data-toggle="dropdown" data-trigger="hover" >
+            Seasons
+                </a>
+                <div class="dropdown-menu bg-secondary" id="seasondropdown">
+                <a class="dropdown-item text-light" href="">
+                    Season1
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-light" href="">
+                        Season2
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-light" href="">
+                        Season3
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-light" href="">
+                        Season4
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-light" href="">
+                        Season5
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-light" href="">
+                        Season6
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-light" href="">
+                        Season7
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+        <a href="" class="nav-link text-light">About</a>    
+            </li>
+            <li class="nav-item">
+        <a href="" class="nav-link text-light">Contact</a>    
+            </li>
+            </ul></nav>
+               </div>
+<!--           nav for small screen-->
+           <div id="small">
+           <nav class="navbar fixed-top d-flex" >
+               <a class="navbar-brand text-light col-sm-2 col-md-2">Game Of Thrones</a>
+               <div class="navsm" >
+               <div >
+                   <form class="form-inline col-sm-1 col-md-1 " >
+                <input type="search" name="search" class="form-control transparent-input" style="background-color: rgba(0,0,0,0)" placeholder="search">
+                </form>
+                </div>
+                   <div style=" width: 20%;margin-right : 8%;margin-left: -8%; " >
+                   <div class="dropdown dropleft" >
+                       <a class="dropdown-toggle" data-toggle="dropdown" href="">
+                           <img src="images/menu.png" style="width: 100%; border-radius: 100%">
+                       </a>
+<!--                       dropdown menu of season-->
+                     <div class="dropdown-menu dropdown-menu-left container-fluid"  >
+                <a href="" class="dropdown-item">Home </a>
+                          <div class="dropdown-divider"></div>
+                <a class="dropdown-item dropdown dropdown-toggle" data-toggle="dropdown" href="">seasons
+                    <div class="dropdown-menu bg-dark">
+                    <a href="" class="dropdown-item text-light">Season 1</a>
+                         <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item text-light">Season 2</a>
+                         <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item text-light">Season 3</a>
+                         <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item text-light">Season 4</a>
+                         <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item text-light">Season 5</a>
+                         <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item text-light">Season 6</a>
+                         <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item text-light">Season 7</a>
+                         <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item text-light">Season 8</a>
+                    </div>
+                </a>
+                         <div class="dropdown-divider"></div>
+
+                         <a href="" class="dropdown-item">About </a>
+                          <div class="dropdown-divider"></div>
+                         <a href="" class="dropdown-item">Contact</a>
+                   </div>
+                   </div>
+               </div>
+           </div>
+               
+           </nav>
+</div>
+<!--           banner of the site-->
+           <div class="banner">
+           <img src="images/PCX4eSB.jpg" class=" img-fluis" style="width: 100%;">
+           </div>
+
+           </header>
+            <main>
+                <div class="row d-flex">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="images/smallban.png" class="ml-0 pl-0 " style="width: 80%">
+                </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mx-auto my-auto">
+                    <h1>
+                        Game Of Thrones
+                        </h1>
+                        <small class="font-italic text-danger">
+                            Season change but game remain same!
+                        </small>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
+                        </p>
+                        <button type="button" class="btn btn-lg btn-dark">
+                            More>>
+                        </button>
+                    </div>
+                </div>
+                <div class="container-fluid" id="car">
+                    <h1 class="display-3 font-weight-light text-center">
+                        Seasons
+                    </h1>
+                    <div class="carousel slide" data-ride="carousel" id="deck">
+<!--                        indicators -->
+                        <ul class="carousel-indicators">
+    <li data-target="#deck" data-slide-to="0" class="active bg-success "></li>
+    <li data-target="#deck" data-slide-to="1" class="bg-success"></li>
+    <li data-target="#deck" data-slide-to="2" class="bg-success"></li>
+  </ul>
+                 <!--  slide controls-->
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                <div class="card-deck justify-content-space-evenly">
+                    <div class="card col-lg-4 col-md-4 col-sm-12">
+                    <img class="card-img-top  " src="images/s11.jpg" >
+                        <div class="card-body"><h3 class="card-title">Season 1</h3>
+                        <p class="card-text">
+                            Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+                            </p>
+                            </div>
+                      <div class="dropdown dropright">
+                           <button type="button" data-target="#videomodal" data-toggle="modal" class="btn btn-success mb-0" >Teaser
+                            </button>
+                            <div class="modal" id="videomodal">
+                                <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light">
+                                        Game Of thrones/Season 2/Teaser
+                                        </h5>
+                                    </div>
+                                        <div class="modal-body">
+                                        <iframe  src="https://www.youtube.com/embed/XuKfFzk1uQs"  height="300" width="450">
+                                            </iframe>
+                                        </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-success mb-0" class="close" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                           <button type="button" class="btn btn-success mb-0 dropdown dropright dropdown-toggle " data-toggle="dropdown">
+                               Episodes
+                          </button>
+                            <div class="dropdown-menu dropright">
+                            <a class="dropdown-item" href="">
+                                episode 1
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 3
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 4
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 5
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 6
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 7
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 8
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 9
+                                </a>
+                                <div class="dropdown-divider"></div>     
+                            </div>
+                           <button type="button" class="btn btn-success mb-0">
+                               IMDb
+                          </button>
+                        
+                        </div>
+                        <div class="card-footer">
+                            <strong>Released</strong> : June 19,2011
+                        </div>
+                    </div>
+                    <div class="card">
+                    <img class="card-img-top" src="images/s22.jpeg"  >
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Season 2
+                            </h3>
+                        <p class="card-text">
+                            Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+                            </p>
+                        </div>
+                        <div class="dropdown dropright">
+                           
+                            <button type="button" data-target="#videomodal" data-toggle="modal" class="btn btn-success" >Teaser
+                            </button>
+                            <div class="modal" id="videomodal">
+                                <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light">
+                                        Game Of thrones/Season 2/Teaser
+                                        </h5>
+                                    </div>
+                                        <div class="modal-body">
+                                        <iframe  src="https://www.youtube.com/embed/XuKfFzk1uQs"  height="300" width="450">
+                                            </iframe>
+                                        </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-success" class="close" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           <button type="button" class="btn btn-success dropdown dropright dropdown-toggle " data-toggle="dropdown">
+                               Episodes
+                            </button>
+                            <div class="dropdown-menu dropright">
+                            <a class="dropdown-item" href="">
+                                episode 1
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 3
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 4
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 5
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 6
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 7
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 8
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 9
+                                </a>
+                                <div class="dropdown-divider"></div>     
+                            </div>
+                            <button type="button" class="btn btn-success ml-15">
+                               IMDb
+                            </button>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Released</strong> : June 3,2012
+                        </div>
+                    </div>
+                    <div class="card">
+                    <img class="card-img-top" src="images/s33.jpeg" >
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Season 3
+                            </h3>
+                        <p class="card-text">
+                            Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+                            </p>
+                        </div>
+                         <div class="dropdown dropright">
+                              <button type="button" data-target="#videomodal" data-toggle="modal" class="btn btn-success" >Teaser
+                            </button>
+                            <div class="modal" id="videomodal">
+                                <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light">
+                                        Game Of thrones/Season 2/Teaser
+                                        </h5>
+                                    </div>
+                                        <div class="modal-body">
+                                        <iframe  src="https://www.youtube.com/embed/XuKfFzk1uQs"  height="300" width="450">
+                                            </iframe>
+                                        </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-success" class="close" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                           <button type="button" class="btn btn-success dropdown dropright dropdown-toggle " data-toggle="dropdown">
+                               Episodes
+                             </button>
+                            <div class="dropdown-menu dropright">
+                            <a class="dropdown-item" href="">
+                                episode 1
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 3
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 4
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 5
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 6
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 7
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 8
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 9
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                
+                            </div>
+                             <button type="button" class="btn btn-success">
+                               IMDb
+                             </button>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Released</strong> : June 19,2011
+                        </div>
+                    </div>
+                    </div>
+                        </div><!-- carousel item closing div-->
+                        
+<!--                            2nd card deck-->
+                            <div class="carousel-item">
+                            <div class="container-fluid">
+                    <div class="card-deck justify-content-space-evenly">
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                    <img class="card-img-top " src="images/s44.jpg" >
+                        <div class="card-body"><h3 class="card-title">Season 4</h3>
+                        <p class="card-text mb-0">
+                            Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+                            </p>
+                        </div>
+                      <div class="dropdown dropright">
+                           <button type="button" data-target="#videomodal" data-toggle="modal" class="btn btn-success mb-0" >Teaser
+                            </button>
+                            <div class="modal" id="videomodal">
+                                <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light">
+                                        Game Of thrones/Season 2/Teaser
+                                        </h5>
+                                    </div>
+                                        <div class="modal-body">
+                                        <iframe  src="https://www.youtube.com/embed/XuKfFzk1uQs"  height="300" width="450">
+                                            </iframe>
+                                        </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-success" class="close" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                           <button type="button" class="btn btn-success mb-0 dropdown dropright dropdown-toggle " data-toggle="dropdown">
+                               Episodes
+                          </button>
+                            <div class="dropdown-menu dropright">
+                            <a class="dropdown-item" href="">
+                                episode 1
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 3
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 4
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 5
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 6
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 7
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 8
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 9
+                                </a>
+                                <div class="dropdown-divider"></div>     
+                            </div>
+                           <button type="button" class="btn btn-success mb-0">
+                               IMDb
+                          </button>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Released</strong> : June 19,2011
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                    <img class="card-img-top" src="images/s55.jpg"  >
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Season 5
+                            </h3>
+                        <p class="card-text mb-0">
+                            Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+                            </p>
+                        </div>
+                        <div class="dropdown dropright">
+                           
+                            <button type="button" data-target="#videomodal" data-toggle="modal" class="btn btn-success" >Teaser
+                            </button>
+                            <div class="modal" id="videomodal">
+                                <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light">
+                                        Game Of thrones/Season 2/Teaser
+                                        </h5>
+                                    </div>
+                                        <div class="modal-body">
+                                        <iframe  src="https://www.youtube.com/embed/XuKfFzk1uQs"  height="300" width="450">
+                                            </iframe>
+                                        </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-success" class="close" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           <button type="button" class="btn btn-success dropdown dropright dropdown-toggle " data-toggle="dropdown">
+                               Episodes
+                            </button>
+                            <div class="dropdown-menu dropright">
+                            <a class="dropdown-item" href="">
+                                episode 1
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 3
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 4
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 5
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 6
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 7
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 8
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 9
+                                </a>
+                                <div class="dropdown-divider"></div>     
+                            </div>
+                            <button type="button" class="btn btn-success ml-15">
+                               IMDb
+                            </button>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Released</strong> : June 3,2012
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-4 col-sm-12">
+                    <img class="card-img-top" src="images/s11.jpg" >
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Season 6
+                            </h3>
+                        <p class="card-text mb-0">
+                            Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+                            </p>
+                        </div>
+                         <div class="dropdown dropright">
+                              <button type="button" data-target="#videomodal" data-toggle="modal" class="btn btn-success" >Teaser
+                            </button>
+                            <div class="modal" id="videomodal">
+                                <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light">
+                                        Game Of thrones/Season 2/Teaser
+                                        </h5>
+                                    </div>
+                                        <div class="modal-body">
+                                        <iframe  src="https://www.youtube.com/embed/XuKfFzk1uQs"  height="300" width="450">
+                                            </iframe>
+                                        </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-success" class="close" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                           <button type="button" class="btn btn-success dropdown dropright dropdown-toggle " data-toggle="dropdown">
+                               Episodes
+                             </button>
+                            <div class="dropdown-menu dropright">
+                            <a class="dropdown-item" href="">
+                                episode 1
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 3
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 4
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 5
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 6
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 7
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 8
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 9
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                
+                            </div>
+                             <button type="button" class="btn btn-success">
+                               IMDb
+                             </button>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Released</strong> : June 19,2011
+                        </div>
+                    </div>
+                       </div>           <!-- 2nd card deck closing div--> 
+                                </div>     <!--2nd carousel-item closing div-->
+                                </div>
+<!--                            3rd card deck-->
+                                   <div class="carousel-item">
+                            <div class="container-fluid">
+                    <div class="card-deck">
+                    <div class="card col-lg-4 col-md-4 col-sm-12">
+                    <img class="card-img-top " src="images/s77.jpg" >
+                        <div class="card-body"><h3 class="card-title">Season 7</h3>
+                        <p class="card-text">
+                            Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+                            </p>
+                        </div>
+                      <div class="dropdown dropright">
+                           <button type="button" data-target="#videomodal" data-toggle="modal" class="btn btn-success" >Teaser
+                            </button>
+                            <div class="modal" id="videomodal">
+                                <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light">
+                                        Game Of thrones/Season 2/Teaser
+                                        </h5>
+                                    </div>
+                                        <div class="modal-body">
+                                        <iframe  src="https://www.youtube.com/embed/XuKfFzk1uQs"  height="300" width="450">
+                                            </iframe>
+                                        </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-success" class="close" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                           <button type="button" class="btn btn-success dropdown dropright dropdown-toggle " data-toggle="dropdown">
+                               Episodes
+                          </button>
+                            <div class="dropdown-menu dropright">
+                            <a class="dropdown-item" href="">
+                                episode 1
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 3
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 4
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 5
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 6
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 7
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 8
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 9
+                                </a>
+                                <div class="dropdown-divider"></div>     
+                            </div>
+                           <button type="button" class="btn btn-success">
+                               IMDb
+                          </button>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Released</strong> : June 19,2011
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-4 col-sm-12">
+                    <img class="card-img-top" src="images/s88.jpg"  >
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Season 8
+                            </h3>
+                        <p class="card-text">
+                            Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+                            </p>
+                        </div>
+                        <div class="dropdown dropright">
+                           
+                            <button type="button" data-target="#videomodal" data-toggle="modal" class="btn btn-success" >Teaser
+                            </button>
+                            <div class="modal" id="videomodal">
+                                <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light">
+                                        Game Of thrones/Season 2/Teaser
+                                        </h5>
+                                    </div>
+                                        <div class="modal-body">
+                                        <iframe  src="https://www.youtube.com/embed/XuKfFzk1uQs"  height="300" width="450">
+                                            </iframe>
+                                        </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-success" class="close" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           <button type="button" class="btn btn-success dropdown dropright dropdown-toggle " data-toggle="dropdown">
+                               Episodes
+                            </button>
+                            <div class="dropdown-menu dropright">
+                            <a class="dropdown-item" href="">
+                                episode 1
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 3
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 4
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 5
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 6
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 7
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 8
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 9
+                                </a>
+                                <div class="dropdown-divider"></div>     
+                            </div>
+                            <button type="button" class="btn btn-success ml-15">
+                               IMDb
+                            </button>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Released</strong> : June 3,2012
+                        </div>
+                    </div>
+                    <div class="card border-0 col-lg-4 col-md-6 col-sm-12"></div>
+                        </div>    <!-- 3rd card deck closing div-->
+                    </div>       <!-- 3rd crousel-item closing div-->
+                                       </div>
+<!--                        sides arrows for moving the slide-->
+                            <a class="carousel-control-prev" href="#deck" data-slide="prev">
+                           <span class="carousel-control-prev-icon bg-success"></span>
+                           </a>
+                           <a class="carousel-control-next" href="#deck" data-slide="next">
+                           <span class="carousel-control-next-icon bg-success"></span>
+                           </a>
+                            
+                            
+                        </div>        <!-- carousel inner closing div-->
+                        </div>           <!--  carousel main div closing-->
+                </div>                  <!--container-fluid closing div-->
+                
+                
+                <!--                carousel for small screen-->
+                
+                
+                <div class="container-fluid" id="small-car">
+                <h1 class="display-3 font-weight-light text-center">
+                        Seasons
+                    </h1>
+                    <div class="carousel slide" data-ride="carousel" id="deck">
+<!--                        indicators -->
+                        <ul class="carousel-indicators">
+    <li data-target="#deck" data-slide-to="0" class="active bg-success "></li>
+    <li data-target="#deck" data-slide-to="1" class="bg-success"></li>
+    <li data-target="#deck" data-slide-to="2" class="bg-success"></li>
+                            <li data-target="#deck" data-slide-to="3" class="bg-success"></li>
+                            <li data-target="#deck" data-slide-to="4" class="bg-success"></li>
+                            <li data-target="#deck" data-slide-to="5" class="bg-success"></li>
+                            <li data-target="#deck" data-slide-to="6" class="bg-success"></li>
+                            <li data-target="#deck" data-slide-to="7" class="bg-success"></li>
+  </ul>
+                 <!--  slide controls-->
+                        <div class="carousel-inner" >
+                        <div class="carousel-item active">
+                    <div class="card col-sm-12">
+                    <img class="card-img-top  " src="images/s11.jpg" >
+                        <div class="card-body"><h3 class="card-title">Season 1</h3>
+                        <p class="card-text">
+                            Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+                            </p>
+                            </div>
+                      <div class="dropdown dropright">
+                           <button type="button" data-target="#videomodal" data-toggle="modal" class="btn btn-success mb-0" >Teaser
+                            </button>
+                            <div class="modal" id="videomodal">
+                                <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light">
+                                        Game Of thrones/Season 2/Teaser
+                                        </h5>
+                                    </div>
+                                        <div class="modal-body">
+                                        <iframe  src="https://www.youtube.com/embed/XuKfFzk1uQs"  height="300" width="450">
+                                            </iframe>
+                                        </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-success mb-0" class="close" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                           <button type="button" class="btn btn-success mb-0 dropdown dropright dropdown-toggle " data-toggle="dropdown">
+                               Episodes
+                          </button>
+                            <div class="dropdown-menu dropright">
+                            <a class="dropdown-item" href="">
+                                episode 1
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 3
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 4
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 5
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 6
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 7
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 8
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 9
+                                </a>
+                                <div class="dropdown-divider"></div>     
+                            </div>
+                           <button type="button" class="btn btn-success mb-0">
+                               IMDb
+                          </button>
+                        
+                        </div>
+                        <div class="card-footer">
+                            <strong>Released</strong> : June 19,2011
+                        </div>
+                            </div></div>
+<!--                            2nd card-->
+                            <div class="carousel-item">
+                    <div class="card">
+                    <img class="card-img-top" src="images/s22.jpeg"  >
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Season 2
+                            </h3>
+                        <p class="card-text">
+                            Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+                            </p>
+                        </div>
+                        <div class="dropdown dropright">
+                           
+                            <button type="button" data-target="#videomodal" data-toggle="modal" class="btn btn-success" >Teaser
+                            </button>
+                            <div class="modal" id="videomodal">
+                                <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light">
+                                        Game Of thrones/Season 2/Teaser
+                                        </h5>
+                                    </div>
+                                        <div class="modal-body">
+                                        <iframe  src="https://www.youtube.com/embed/XuKfFzk1uQs"  height="300" width="450">
+                                            </iframe>
+                                        </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-success" class="close" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           <button type="button" class="btn btn-success dropdown dropright dropdown-toggle " data-toggle="dropdown">
+                               Episodes
+                            </button>
+                            <div class="dropdown-menu dropright">
+                            <a class="dropdown-item" href="">
+                                episode 1
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 3
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 4
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 5
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 6
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 7
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 8
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 9
+                                </a>
+                                <div class="dropdown-divider"></div>     
+                            </div>
+                            <button type="button" class="btn btn-success ml-15">
+                               IMDb
+                            </button>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Released</strong> : June 3,2012
+                        </div>
+                    </div></div>
+<!--                            3rd card-->
+                            <div class="carousel-item" >
+                    <div class="card">
+                    <img class="card-img-top" src="images/s33.jpeg" >
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Season 3
+                            </h3>
+                        <p class="card-text">
+                            Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+                            </p>
+                        </div>
+                         <div class="dropdown dropright">
+                              <button type="button" data-target="#videomodal" data-toggle="modal" class="btn btn-success" >Teaser
+                            </button>
+                            <div class="modal" id="videomodal">
+                                <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light">
+                                        Game Of thrones/Season 2/Teaser
+                                        </h5>
+                                    </div>
+                                        <div class="modal-body">
+                                        <iframe  src="https://www.youtube.com/embed/XuKfFzk1uQs"  height="300" width="450">
+                                            </iframe>
+                                        </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-success" class="close" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                           <button type="button" class="btn btn-success dropdown dropright dropdown-toggle " data-toggle="dropdown">
+                               Episodes
+                             </button>
+                            <div class="dropdown-menu dropright">
+                            <a class="dropdown-item" href="">
+                                episode 1
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 3
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 4
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 5
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 6
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 7
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 8
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 9
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                
+                            </div>
+                             <button type="button" class="btn btn-success">
+                               IMDb
+                             </button>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Released</strong> : June 19,2011
+                        </div>
+                    </div>
+                    </div>
+                        <!-- carousel item closing div-->
+<!--                         4rd card-->
+                            <div class="carousel-item" >
+                    
+                    <div class="card col-sm-12">
+                    <img class="card-img-top " src="images/s44.jpg" >
+                        <div class="card-body"><h3 class="card-title">Season 4</h3>
+                        <p class="card-text mb-0">
+                            Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+                            </p>
+                        </div>
+                      <div class="dropdown dropright">
+                           <button type="button" data-target="#videomodal" data-toggle="modal" class="btn btn-success mb-0" >Teaser
+                            </button>
+                            <div class="modal" id="videomodal">
+                                <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light">
+                                        Game Of thrones/Season 2/Teaser
+                                        </h5>
+                                    </div>
+                                        <div class="modal-body">
+                                        <iframe  src="https://www.youtube.com/embed/XuKfFzk1uQs"  height="300" width="450">
+                                            </iframe>
+                                        </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-success" class="close" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                           <button type="button" class="btn btn-success mb-0 dropdown dropright dropdown-toggle " data-toggle="dropdown">
+                               Episodes
+                          </button>
+                            <div class="dropdown-menu dropright">
+                            <a class="dropdown-item" href="">
+                                episode 1
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 3
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 4
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 5
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 6
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 7
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 8
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 9
+                                </a>
+                                <div class="dropdown-divider"></div>     
+                            </div>
+                           <button type="button" class="btn btn-success mb-0">
+                               IMDb
+                          </button>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Released</strong> : June 19,2011
+                        </div>
+                    </div>
+                            </div>
+                            <!--                         5rd card-->
+                            <div class="carousel-item">
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                    <img class="card-img-top" src="images/s55.jpg"  >
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Season 5
+                            </h3>
+                        <p class="card-text mb-0">
+                            Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+                            </p>
+                        </div>
+                        <div class="dropdown dropright">
+                           
+                            <button type="button" data-target="#videomodal" data-toggle="modal" class="btn btn-success" >Teaser
+                            </button>
+                            <div class="modal" id="videomodal">
+                                <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light">
+                                        Game Of thrones/Season 2/Teaser
+                                        </h5>
+                                    </div>
+                                        <div class="modal-body">
+                                        <iframe  src="https://www.youtube.com/embed/XuKfFzk1uQs"  height="300" width="450">
+                                            </iframe>
+                                        </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-success" class="close" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           <button type="button" class="btn btn-success dropdown dropright dropdown-toggle " data-toggle="dropdown">
+                               Episodes
+                            </button>
+                            <div class="dropdown-menu dropright">
+                            <a class="dropdown-item" href="">
+                                episode 1
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 3
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 4
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 5
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 6
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 7
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 8
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 9
+                                </a>
+                                <div class="dropdown-divider"></div>     
+                            </div>
+                            <button type="button" class="btn btn-success ml-15">
+                               IMDb
+                            </button>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Released</strong> : June 3,2012
+                        </div>
+                    </div>
+                            </div>
+                            <!--                         6rd card-->
+                            <div class="carousel-item">
+                    <div class="card col-sm-12">
+                    <img class="card-img-top" src="images/s11.jpg" >
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Season 6
+                            </h3>
+                        <p class="card-text mb-0">
+                            Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+                            </p>
+                        </div>
+                         <div class="dropdown dropright">
+                              <button type="button" data-target="#videomodal" data-toggle="modal" class="btn btn-success" >Teaser
+                            </button>
+                            <div class="modal" id="videomodal">
+                                <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light">
+                                        Game Of thrones/Season 2/Teaser
+                                        </h5>
+                                    </div>
+                                        <div class="modal-body">
+                                        <iframe  src="https://www.youtube.com/embed/XuKfFzk1uQs"  height="300" width="450">
+                                            </iframe>
+                                        </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-success" class="close" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                           <button type="button" class="btn btn-success dropdown dropright dropdown-toggle " data-toggle="dropdown">
+                               Episodes
+                             </button>
+                            <div class="dropdown-menu dropright">
+                            <a class="dropdown-item" href="">
+                                episode 1
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 3
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 4
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 5
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 6
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 7
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 8
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 9
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                
+                            </div>
+                             <button type="button" class="btn btn-success">
+                               IMDb
+                             </button>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Released</strong> : June 19,2011
+                        </div>
+                       </div>            
+                                </div>     <!-- carousel-item closing div-->
+                            <!--                         7th card-->
+                                   <div class="carousel-item" >
+                    
+                    <div class="card col-sm-12">
+                    <img class="card-img-top " src="images/s77.jpg" >
+                        <div class="card-body"><h3 class="card-title">Season 7</h3>
+                        <p class="card-text">
+                            Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+                            </p>
+                        </div>
+                      <div class="dropdown dropright">
+                           <button type="button" data-target="#videomodal" data-toggle="modal" class="btn btn-success" >Teaser
+                            </button>
+                            <div class="modal" id="videomodal">
+                                <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light">
+                                        Game Of thrones/Season 2/Teaser
+                                        </h5>
+                                    </div>
+                                        <div class="modal-body">
+                                        <iframe  src="https://www.youtube.com/embed/XuKfFzk1uQs"  height="300" width="450">
+                                            </iframe>
+                                        </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-success" class="close" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                           <button type="button" class="btn btn-success dropdown dropright dropdown-toggle " data-toggle="dropdown">
+                               Episodes
+                          </button>
+                            <div class="dropdown-menu dropright">
+                            <a class="dropdown-item" href="">
+                                episode 1
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 3
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 4
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 5
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 6
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 7
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 8
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 9
+                                </a>
+                                <div class="dropdown-divider"></div>     
+                            </div>
+                           <button type="button" class="btn btn-success">
+                               IMDb
+                          </button>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Released</strong> : June 19,2011
+                        </div>
+                    </div>
+                            </div>
+                            <!--                         8th card-->
+                            <div class="carousel-item" >
+                    <div class="card col-sm-12">
+                    <img class="card-img-top" src="images/s88.jpg"  >
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Season 8
+                            </h3>
+                        <p class="card-text">
+                            Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+                            </p>
+                        </div>
+                        <div class="dropdown dropright">
+                           
+                            <button type="button" data-target="#videomodal" data-toggle="modal" class="btn btn-success" >Teaser
+                            </button>
+                            <div class="modal" id="videomodal">
+                                <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light">
+                                        Game Of thrones/Season 2/Teaser
+                                        </h5>
+                                    </div>
+                                        <div class="modal-body">
+                                        <iframe  src="https://www.youtube.com/embed/XuKfFzk1uQs"  height="300" width="450">
+                                            </iframe>
+                                        </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-success" class="close" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           <button type="button" class="btn btn-success dropdown dropright dropdown-toggle " data-toggle="dropdown">
+                               Episodes
+                            </button>
+                            <div class="dropdown-menu dropright">
+                            <a class="dropdown-item" href="">
+                                episode 1
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 3
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 4
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 5
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 6
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 7
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 8
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">
+                                    episode 9
+                                </a>
+                                <div class="dropdown-divider"></div>     
+                            </div>
+                            <button type="button" class="btn btn-success ml-15">
+                               IMDb
+                            </button>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Released</strong> : June 3,2012
+                        </div>
+                    </div>
+                    <div class="card border-0 col-lg-4 col-md-6 col-sm-12">
+                        </div>    <!-- 3rd card deck closing div-->
+                    </div>       <!-- 3rd crousel-item closing div-->
+                                
+<!--                        sides arrows for moving the slide-->
+                            <a class="carousel-control-prev" href="#deck" data-slide="prev">
+                           <span class="carousel-control-prev-icon bg-success"></span>
+                           </a>
+                           <a class="carousel-control-next" href="#deck" data-slide="next">
+                           <span class="carousel-control-next-icon bg-success"></span>
+                           </a>
+                            
+                            
+                        </div>        <!-- carousel inner closing div-->
+                        </div>           <!--  carousel main div closing-->
+                
+                </div>
+                
+<!--                director writer section-->
+                
+                <div class="container col-sm-12 d-flex" id="dw">
+                <div class="container-fluid col-lg-6 col-md-12 col-sm-12 para" >
+                    <h4>
+                        Director
+                    </h4><hr>
+                    <img src="images/director.jpg" class="img-fluid mr-2" align="left">
+                    <p class="text-justified">
+                        Alan Taylor is an American television and film director. He is known for his work on TV shows such as Lost, The West Wing, Six Feet Under, Sex and the City, The Sopranos, Game of Thrones, Boardwalk Empire, Deadwood, and Mad Men. He also directed films such as Palookaville, Thor: The Dark World, and Terminator Genisys. Wikipedia
+                        <br>Born: 1965 (age 54 years), United States   
+                    </p>
+                    <br>
+                        <button type="button" data-target="#other_d" data-toggle="collapse" class="btn btn-success">Others>></button>
+                        <div id="other_d" class="collapse">
+                            <div class="container d-flex" style="position: relative">
+                     <div class="container-fluid col-lg-6 col-md-6 col-sm-12">
+                    <h5>Other Directors</h5><hr>
+                    <img src="images/director.jpg" class="img-fluid mr-2" align="left">
+                    <p class="text-justified">
+                        Alan Taylor is an American television and film director. He is known for his work on TV shows such as Lost, The West Wing, Six Feet Under, Sex and the City, The Sopranos, Game of Thrones, Boardwalk Empire, Deadwood, and Mad Men. He also directed films such as Palookaville, Thor: The Dark World, and Terminator Genisys. Wikipedia
+                        <br>Born: 1965 (age 54 years), United States   
+                    </p>
+                            </div> <!-- container-fluid closing div-->
+                    </div> <!-- other director container closing div-->
+                    </div> <!-- director collapse closing div-->
+                </div>
+                    <div class="container-fluid col-lg-6 col-md-12 col-sm-12 para">
+                    <h4 >
+                        Writer
+                        </h4>
+                        <hr>
+                        <img src="images/writer.jpg" class="img-responsive mr-2" align="left" >
+                        <p>
+                        David Benioff is an American screenwriter, television producer, writer, and novelist. He is the co-creator and showrunner of the widely acclaimed award-winning HBO series Game of Thrones. Wikipedia
+                        <br>Born: September 25, 1970 (age 48 years), New York, New York, United States
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+                        <button type="button" data-target="#other_w"  data-toggle="collapse" class="btn btn-success">
+                            Others>>
+                        </button>
+                        <div id="other_w" class="collapse">
+                            <div class="container d-flex" style="position: relative">
+                     <div class="container-fluid col-lg-6 col-md-6 col-sm-12">
+                    <h5>
+                        Other Writers
+                         </h5>
+                         <hr>
+                    <img src="images/director.jpg" class="img-responsive pull-left mr-2">
+                    <p class="text-left">
+                        Alan Taylor is an American television and film director. He is known for his work on TV shows such as Lost, The West Wing, Six Feet Under, Sex and the City, The Sopranos, Game of Thrones, Boardwalk Empire, Deadwood, and Mad Men. He also directed films such as Palookaville, Thor: The Dark World, and Terminator Genisys. Wikipedia
+                        <br>Born: 1965 (age 54 years), United States   
+                    </p>
+                         
+                          </div>     <!-- container-fluid closing div-->
+                    </div> <!-- container closing div-->
+                    </div> <!-- collapse closing div-->
+                    </div> <!-- main writer container-fluid closing div-->
+                </div> <!-- main container closing div-->
+                <hr>
+                
+<!--                Gallery-->
+                <div class="container">
+     
+ 
+ 
+<div class="container gallery-container">
+  
+    <h1 class="text-center display-3">Characters</h1>
+      
+    <div class="tz-gallery">
+  
+        <div class="row ">
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="lightbox" href="images/arya.jpg">
+                    <img src="images/arya.jpg" alt="Park" class="card-img-top">
+                    </a>
+                </div>
+            </div>
+             
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="lightbox" href="images/220px-Tyrion_Lannister-Peter_Dinklage.jpg">
+                    <img src="images/220px-Tyrion_Lannister-Peter_Dinklage.jpg" alt="Park" class="card-img-top">
+                    </a>
+                </div>
+            </div>
+             
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="lightbox" href="images/bramn.jpeg">
+                    <img src="images/bramn.jpeg" alt="Park" class="card-img-top">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="lightbox" href="images/cersei1.jpg">
+                    <img src="images/cersei1.jpg" alt="Park" class="card-img-top">
+                    </a>
+                </div>
+            </div>
+        </div>
+          <div class="row"> 
+            <div class="col-md-4 col-lg-3">
+                <div class="card">
+                    <a class="lightbox" href="images/tyrell.jpg">
+                    <img src="images/tyrell.jpg" alt="Park" class="card-img-top">
+                    </a>
+                </div>
+            </div>
+             
+            <div class="col-md-4 col-lg-3">
+                <div class="card">
+                    <a class="lightbox" href="images/Daenerys_Season_8.jpg">
+                    <img src="images/Daenerys_Season_8.jpg" alt="Park" class="card-img-top">
+                    </a>
+                </div>
+            </div>
+             
+            <div class="col-md-4 col-lg-3">
+                <div class="card">
+                    <a class="lightbox" href="images/sansa.jpg">
+                    <img src="images/sansa.jpg" alt="Park" class="card-img-top">
+                    </a>
+                </div>
+            </div>
+              <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="lightbox" href="images/jon-snow.jpeg">
+                    <img src="images/jon-snow.jpeg" alt="Park" class="card-img-top">
+                    </a>
+                </div>
+            </div>
+         
+        </div>
+  
+    </div>
+  
+</div>
+                    
+ 
+</div>
+                
+
+            </main>
+            <hr>
+            <footer class="sticky-bottom">
+            <div class="container-fluid bg-dark" id="foot" >
+                <div class="container-fluid">
+                <h5 class="text-center ml-5 text-light ">
+                    FOLLOW GOT
+                    </h5>
+                    <ul class="media justify-content-center">
+                        <li >
+                            <img src="images/fb.png" style="width: 100%;">
+                        </li>
+                        <li >
+                            <img src="images/insta.png" style="width: 100%;">
+                        </li>
+                        <li >
+                            <img src="images/sc.png" style="width: 100%;">
+                        </li>
+                        <li >
+                            <img src="images/twitter.png" style="width: 100%;">
+                        </li>
+                        <li >
+                            <img src="images/youtube.png" style="width: 100%;">
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-fluid" id="foot2">
+                <h5 class="text-center ml-5 text-light">
+                    GOT
+                    </h5>
+                    <ul class="list-group list-group-horizontal text-light justify-content-center ml-5 font-weight-light">
+                    <li>
+                        <a href="">ABOUT</a>
+                        </li>
+                        <li>
+                        <a href="">WAYS TO GET</a>
+                        </li>
+                        <li>
+                        <a href="">HELP</a>
+                        </li>
+                        <li>
+                        <a href="">SHOP</a>
+                        </li>
+                        <li>
+                        <a href="">CAREER</a>
+                        </li>
+                        <li>
+                        <a href="">HBO INSPIRES</a>
+                        </li>
+                    </ul>
+                    <p class="text-center ml-4 text-light font-weight-light" style="font-size: 13px;">
+                        &copy;2019 Home Box Office,Inc.All Rights Reserved.<br>This Website may contain mature content
+                    </p>
+                    <ul  class="list-group list-group-horizontal text-light justify-content-center ml-5 font-weight-light" style="font-size: 12px;">
+                        <li>
+                            <a href="">PRIVACY POLICY</a>
+                        </li>
+                        <li>
+                            <a href="">TERMS</a>
+                        </li>
+                        <li>
+                            <a href="">ADD CHOICES</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </footer>
+            </div>
+      <!-- moving effect of gallery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js">
+        </script>
+        
+        <script>
+//            for gallery 
+    baguetteBox.run('.tz-gallery');
+//              for changing color of navbar on scroll
+             $(window).scroll(function()
+                        {
+            $('nav').toggleClass('scrolled', $(this).scrollTop()>150 );
+        });
+</script>
+
+
+    </body>
+</html>
